@@ -20,10 +20,8 @@ def remove_html_markup(s):
     print (out.replace('/n',''))
     return out
 
-testurl = "http://192.114.182.162/kkl_arcgis_server/rest/services/MeydaTichnuny/meydaTichnunymap/MapServer"
-
 # Open Rest Service
-source = input("Input Server URL (with Parenthesis): ")
+source = input("Input Server URL (with Quotation Marks): ")
 service = arcgis.ArcGIS(source)
 
 # Find Layer Names and IDs #TODO Server Type cases (MapServer, FeatureServer, etc)
