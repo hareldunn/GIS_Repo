@@ -68,7 +68,7 @@ shapes = service.get(layer_id) ### Original
 ### KKL service: "Field ='Value'", MOIN service: "Field = Value"
 
 # Save Output File
-outfile = input("Out File Name (with Parenthesis): ")
+outfile = input("Out File Name (with Quotation Marks): ")
 ###outfile = "helkot_pa"
 with io.open(outfile, "w", encoding="utf-8") as f:
   f.write(unicode(json.dumps(shapes, ensure_ascii=False)))
