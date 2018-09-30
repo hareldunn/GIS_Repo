@@ -1,3 +1,12 @@
+/*
+Visualizing NDVI multi-temporal trends in Sentinel-2 imagery.
+Copy into Sentinel-Hub Playground or EO Browser.
+will take the current image as baseline and calculate average NDVI for the previous 2 months
+Based on:
+https://twitter.com/sentinel_hub/status/922813457145221121
+https://twitter.com/sentinel_hub/status/1020755996359225344
+*/
+
 function    setup (dss) {
   setInputComponents([dss.B04,dss.B08]);
   setOutputComponentCount(3);
