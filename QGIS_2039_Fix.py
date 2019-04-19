@@ -51,7 +51,7 @@ db_standalone_path = "C:\\Program Files\\QGIS "+ '.'.join(qgis.utils.Qgis.QGIS_V
 
 
 srid_val = 2039 #Change if needed
-parameters_val = "+proj=tmerc +lat_0=31.7343936111111 +lon_0=35.2045169444445 +k=1.0000067 +x_0=219529.584 +y_0=626907.39 +ellps=GRS80 +towgs84=-24.0024,-17.1032,-17.8444,-0.33009,-1.85269,1.66969,5.4248 +units=m +no_defs"
+parameters_val = "+proj=tmerc +lat_0=31.7343936111111 +lon_0=35.2045169444445 +k=1.0000067 +x_0=219529.584 +y_0=626907.39 +ellps=GRS80 +towgs84=-24.0024,-17.1032,-17.8444,-0.33077,-1.85269,1.66969,5.4248 +units=m +no_defs"
 
 if os.path.isfile(db_network_path):
 	db_path = db_network_path
