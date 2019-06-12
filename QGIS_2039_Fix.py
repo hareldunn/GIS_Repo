@@ -16,19 +16,19 @@
 *                                                                         *
 ***************************************************************************
 *                                                                         *
-*   Update wrong EPSG:2039 transformation parameters with Systematic's    *
-*   cludge of a fix for Esri button pushers. Note, the Rx value, -0.33009 *
-*   IS WRONG on purpuse, official value in Measurments Regulation 2016 is *
-*   -0.33077, but this is the value Systematics put in their 7 parameter  *
-*   CoordFrame transformation in Esri products, so I'm using this as well.*
-*   The resulting offset is 1.5 cm. Change to correct value if you need.  *
-*   Change the srid_val to 6991 and put the correct value if you cherish  *
-*   accuracy, as it is probably the correct thing to do.                  *
+*   Update old EPSG:2039 Molodensky transformation parameters with        *
+*   Systematics' fix for Esri software. Note, the Rx value, -0.33009      *
+*   differs from the official Rx value in Measurments Regulation 2016,    *
+*   -0.33077, which is apparently an error in the 7 parameter CoordFrame  *
+*   transformation.                                                       *
+*                                                                         *
+*   Change the srid_val to 6991 to update that as well if you wish.       *
+*                                                                         *
 *   With this method, QGIS will recognise EPSG:2039 in the correct        *
 *   position, and layers saved in QGIS will open as such in ArcWhatever.  *
 *                                                                         *
 *   To run, open QGIS' python console, paste and run, or load as file in  *
-*   editor. Instant fix. Verify by checking the EPSG:2039 CRC parameters. *
+*   editor. Instant fix. Verify by checking the EPSG:2039 CRS parameters. *
 *                                                                         *
 ***************************************************************************
 """
