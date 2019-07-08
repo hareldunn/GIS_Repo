@@ -1,0 +1,7 @@
+import re
+from qgis.core import *
+
+@qgsfunction(args='auto', group='String')
+def find_digit(string, feature, parent):
+    match = re.search("\d", string)
+    return match.start(0)
