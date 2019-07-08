@@ -1,0 +1,6 @@
+from qgis.core import *
+import datetime
+
+@qgsfunction(args='auto', group='Date and Time')
+def epoch2time(datefield, feature, parent):
+    return datetime.datetime.fromtimestamp(datefield).strftime('%H:%M')
