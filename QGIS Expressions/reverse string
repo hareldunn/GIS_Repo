@@ -1,0 +1,5 @@
+from qgis.core import *
+
+@qgsfunction(args='auto', group='String')
+def reverse_string(string, feature, parent):
+    return string[::-1]
