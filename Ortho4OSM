@@ -1,1 +1,0 @@
-http://[IP]/arcgis/rest/services/Basemaps/[Layer]/MapServer/tile/{z}/{y}/{x}
